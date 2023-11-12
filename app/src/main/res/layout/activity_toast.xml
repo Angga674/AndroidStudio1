@@ -8,34 +8,70 @@
     tools:context="com.example.myapplication.MainActivity">
 
     <Button
-        android:id="@+id/button_toast"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/button_fibonacci"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
-        android:onClick="showToast"
-        android:text="Toast"
+        android:onClick="showFibonacci"
+        android:text="@string/button_label_fibonacci"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="OnClick" />
 
-    <Button
-        android:id="@+id/button_count"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+    <EditText
+        android:id="@+id/limit_input"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:hint="Enter limit"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
         android:background="@color/colorPrimary"
         android:onClick="countUp"
-        android:text="Count"
+        android:text="count"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorPrimary"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="OnClick" />
 
@@ -43,10 +79,10 @@
         android:id="@+id/show_count"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="#FFFF00"
         android:gravity="center_vertical"
         android:text="0"
@@ -55,10 +91,10 @@
         android:textSize="160sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_fibonacci"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="RtlCompat" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

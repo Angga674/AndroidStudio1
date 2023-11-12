@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">My Application</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Fibonacci</string>
     <string name="toast_message">Hello Toast!</string>
     <string name="article_title">Kasus Sianida</string>
     <string name="article_subtitle">ICE COLD!</string>
@@ -32,5 +32,9 @@ One After 909 — A song recorded for the ¨C11C album was actually worked on wa
     <string name="button_second">Reply</string>
     <string name="editText_second">Enter Your Reply Here</string>
     <string name="text_header_reply">Reply Recieved</string>
+        <string name="button_label_count">Count</string>
+        <string name="button_label_fibonacci">Fibonacci</string>
+        <string name="fibonacci_message">Program Fibonacci</string>
+
 
 </resources>
